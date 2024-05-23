@@ -1,0 +1,45 @@
+[
+  {
+    "id": 2,
+    "title": "Interface CRUD",
+    "bio": "Création d'une interface CRUD pour un centre de collecte et de tri des déchets.",
+    "body": [
+      {"title":"Context", "description":"L'objectif de cette SAE était de produire un système d'information répondant aux besoins d'un client travaillant dans un centre de collecte et de tri des déchets."},
+      {"title":"Travail réalisé", "description":"Ce projet à necessité plusieurs étapes afin de répondre au besoin du client:\n\n- La création d'un modèle conceptuel de données (MCD) afin de rendre compte de l'entièrté du projet en aval de sa réalisation\n- La création des tables de la base de données établie auparavant dans le language SQL\n- La création d'un site web pythonFlask hébergé sur github utilisant la nouvelle base de données et répondant aux attentes du client"},
+      {"title":"Travail personnel", "description":"J'ai premièrement conçu le modèle conceptuel de données afin de pouvoir le retranscrire en tables dans sql. Je me suis occuper de la partie du site web comprenant la gestion des contenaires et de leurs déchets en incluant des fonctions d'agrégations pour calculer le poid des déchets, ainsi que la création de formulaire pour ajouter de nouvelles entitées. J'ai églement réalisé le rapport."}
+    ],
+    "competences": [
+      "Mettre à jour et interroger une base de données relationnelle",
+      "Concevoir une base de données relationnelle à partir d’un cahier des charges"
+    ],
+    "images": {
+      "MCD": "src/assets/images/sae-s104_MCD.png"
+    },
+    "files": {
+      "Rapport": "src/assets/files/sae-s104_Analyse"
+    }
+  },
+  {
+    "id": 1,
+    "title": "Jeu du Jeton manquant",
+    "bio": "Création d'un jeu de plateau Java",
+    "body": [
+      {"title":"Context", "description":"L’objectif de cette SAE est de programmer un jeu « Jeu du Jeton manquant » dans le langage de programmation Java à partir d’un squelette de code ainsi que des variables imposées. Le travail s’effectue par binôme dans un délai de 4 semaines."},
+      {"title":"Règle du Jeu", "description":"Chaque joueur place leur pion chacun leur tour sur une case du plateau, les pions allant de 1 à 10, le but du jeu est d'avoir le moins de point possible autour de la dernière case manquante."},
+      {"title":"Travail réalisé", "description":"Ce projet à été décomposé en plusieurs étapes afin de  structuré le travail réalisé :\n\n- initialisation du plateau de jeu et du système de placement des jetons \n- création d'un système d'alternance de tour des joueurs\n- création d'une méthode de calcul des points de chaque joueur\n- correction des failles du code lié aux possibles erreurs d'entré de l'utilisateur\n- travail sur l'aspect esthétique du jeu\n- rapport en anglais du projet rendu"},
+      {"title":"Travail personnel", "description":"Mes principales tâches durant cette SAE était de performé mes compétences dans le language java afin d'aboutir au résultat escompté. J'ai réaliser les méthodes de génération du plateau et de calcul des points ainsi que le rapport en anglais du projet. J'ai également normé le code en le rendant sans aucuns bugs et avec une documentation des méthodes."}
+    ],
+    "competences": [
+      "Implémentation d’un besoin client",
+      "Développement d'une interface interactive de jeu",
+      "Travail dans une équipe informatique"
+    ],
+    "images": {
+      "Rendu 1 (fin)": "src/assets/images/sae-s101_FinPartie.png",
+      "Rendu 2 (cas erreur)": "src/assets/images/sae-s101_erreur.png"
+    },
+    "files": {
+      "Code source": "src/assets/files/Jeton.java"
+    }
+  }
+]
