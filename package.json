@@ -10,8 +10,10 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@mdi/font": "^7.4.47",
     "vue": "^3.4.21",
-    "vue-router": "^4.3.0"
+    "vue-router": "^4.3.0",
+    "vuetify": "^3.6.0-beta.0.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",

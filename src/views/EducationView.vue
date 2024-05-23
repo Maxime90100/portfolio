@@ -4,7 +4,7 @@
 
 <template>
   <div>
-    <h1>A propos de moi</h1>
+    <h1>Formation</h1>
   </div>
 </template>
 
