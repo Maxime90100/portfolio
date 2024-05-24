@@ -34,7 +34,7 @@ export default {
       <h1 class="text-primary ml-4">{{project.title}}</h1>
     </v-row>
 
-    <v-row v-for="section of project.body">
+    <v-row v-if="project.body" v-for="section of project.body">
       <v-col cols="12">
         <v-card>
           <v-card-title class="text-h5">{{section.title}}</v-card-title>
@@ -56,7 +56,7 @@ export default {
       </v-col>
     </v-row>
 
-    <v-row>
+    <v-row v-if="project.images">
       <v-col cols="4" v-for="(img, key) of Object.entries(project.images)" :key="key">
         <v-card @click="openDialog(img[0])">
           <v-card-title>{{ img[0] }}</v-card-title>
@@ -75,13 +75,12 @@ export default {
       </v-dialog>
     </v-row>
 
-    <v-row>
-      <v-col cols="12" v-for="(file, key) of Object.entries(project.files)" :key="key">
+    <v-row v-if="project.files">
+      <v-col cols="12">
         <v-list>
-          <v-list-item>
-            {{file[0]}}
+          <v-list-item v-for="(file, key) of Object.entries(project.files)" :key="key">
             <a :href="baseUrl + file[1]" :download="file[0]">
-              <v-btn icon="mdi-download" variant="plain"></v-btn>
+              <v-btn prepend-icon="mdi-download" :text="file[0]" variant="plain"></v-btn>
             </a>
           </v-list-item>
         </v-list>

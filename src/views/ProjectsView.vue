@@ -4,27 +4,40 @@
         v-if="!$route.params.id"
         :projects="projects"
     ></ProjectCards>
-    <ProjectDetails
-      v-else
-      :project="selectedProject"
-    ></ProjectDetails>
+    <div v-else>
+      <ProjectDetails
+          v-if="selectedProject"
+          :project="selectedProject"
+      ></ProjectDetails>
+      <v-empty-state
+          v-else
+          icon="mdi-magnify"
+          title="Aucun projet ne correspond à votre recherche."
+          text="Essayez d'ajuster vos termes de recherche."
+      >
+        <router-link to="/projects"><v-btn icon="mdi-arrow-left"></v-btn></router-link>
+      </v-empty-state>
+    </div>
   </div>
 </template>
 
 <script>
 import ProjectCards from "@/components/projects/ProjectCards.vue";
 import ProjectDetails from "@/components/projects/ProjectDetails.vue";
+import {getAllProjects, getProjectsTags} from "@/services/projects.service.js";
 
 export default {
   name: 'ProjectsView',
   components: {ProjectDetails, ProjectCards},
   data() {
     return {
-      projects: []
+      projects: [],
+      tags: []
     };
   },
   mounted() {
     this.loadProjects();
+    this.loadTags()
   },
   computed:{
     selectedProject() {
@@ -36,15 +49,14 @@ export default {
   },
   methods: {
     async loadProjects() {
-      try {
-        const response = await fetch(`${import.meta.env.BASE_URL}public/data/projects.json`);
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        this.projects = await response.json();
-      } catch (error) {
-        console.error('There was a problem with the fetch operation:', error);
-      }
+      getAllProjects()
+          .then(projects => this.projects = projects)
+          .catch(error => console.error(error))
+    },
+    async loadTags(){
+      getProjectsTags()
+          .then(tags => this.tags = tags)
+          .catch(error => console.error(error))
     }
   }
 };

@@ -13,29 +13,37 @@ export default{
 <template>
   <div class="container">
     <h1 class="text-primary">Projets</h1>
-    <div class="cards-container">
-      <v-card
-          v-for="project in projects"
-          class="card"
-      >
-        <v-img
-            class="align-end text-white"
-            height="200"
-            :src="baseUrl + project.images[Object.keys(project.images)[0]]"
-            cover
-        ></v-img>
-
-        <v-card-title class="pt-4">{{project.title}}</v-card-title>
-        <v-card-text>{{project.bio}}</v-card-text>
-
-        <v-card-actions>
-          <v-spacer></v-spacer>
-          <router-link :to="'/projects/'+project.id">
-            <v-btn color="secondary" text="Découvrir"></v-btn>
-          </router-link>
-        </v-card-actions>
-      </v-card>
-    </div>
+    <v-row>
+      <v-col cols="4" v-for="project in projects">
+        <router-link :to="'/projects/'+project.id" style="text-decoration: none">
+          <v-hover>
+            <template v-slot:default="{ isHovering, props }">
+              <v-card
+                  v-bind="props"
+                  :color="isHovering ? 'primary' : undefined"
+                  class="pa-2"
+              >
+                <v-img
+                    class="align-end text-white"
+                    height="200"
+                    :src="project.images ? baseUrl + project.images[Object.keys(project.images)[0]] : baseUrl + 'src/assets/images/no-photo-available.png'"
+                    cover
+                ></v-img>
+                <div style="height: 150px">
+                  <v-card-title class="pt-4">{{project.title}}</v-card-title>
+                  <v-card-text>
+                    <v-chip-group v-if="project.tags">
+                      <v-chip v-for="tag of project.tags" density="compact">{{tag}}</v-chip>
+                    </v-chip-group>
+                    {{project.bio}}
+                  </v-card-text>
+                </div>
+              </v-card>
+            </template>
+          </v-hover>
+        </router-link>
+      </v-col>
+    </v-row>
   </div>
 </template>
 
@@ -43,12 +51,5 @@ export default{
 .container{
   width: 90%;
   margin-left: 5%;
-}
-.cards-container{
-  display: flex;
-  gap: 10px;
-}
-.cards-container .card{
-  width: 33%;
 }
 </style>
