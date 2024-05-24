@@ -29,6 +29,7 @@ export default{
         <v-card-text>{{project.bio}}</v-card-text>
 
         <v-card-actions>
+          <v-spacer></v-spacer>
           <router-link :to="'/projects/'+project.id">
             <v-btn color="secondary" text="Découvrir"></v-btn>
           </router-link>
