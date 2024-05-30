@@ -4,7 +4,7 @@
     "title": "Stage développeur assistant ingénieur",
     "place": {
       "name": "Laboratoire Connaissance et Intelligence Artificielle Distribués (CIAD)",
-      "logo": "src/assets/images/experiences/CIAD_logo.png",
+      "logo": "images/experiences/CIAD_logo.png",
       "website": ""
     },
     "startTime": "15/01/2024",
@@ -20,7 +20,7 @@
     "title": "Stage développeur web",
     "place": {
       "name": "Département du Territoire de Belfort",
-      "logo": "src/assets/images/experiences/CD90_logo.png",
+      "logo": "images/experiences/CD90_logo.png",
       "website": ""
     },
     "startTime": "03/04/2023",
