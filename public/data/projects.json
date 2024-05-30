@@ -3,7 +3,7 @@
     "id": 9,
     "title": "Application web mobile",
     "bio": "Développement d'une application web mobile android.",
-    "image": "src/assets/images/projects/sae-but2-2_home2.png",
+    "image": "images/projects/sae-but2-2_home2.png",
     "tags": ["BUT2"],
     "body": [
       {"title": "Contexte", "description": "Ce projet fait suite au projet de création d'une application Web pour l'organisation d'une manifestation. Il consiste au développement d'une application Mobile reprenant certaines fonctionnalités implémentées sur le site web."},
@@ -18,16 +18,16 @@
       "Elaboration d'une charte graphique"
     ],
     "images": {
-      "Page d'accueil": "src/assets/images/projects/sae-but2-2_home.jpg",
-      "Carte interactive": "src/assets/images/projects/sae-but2-2_map.jpg",
-      "Liste des attractions": "src/assets/images/projects/sae-but2-2_attractions.jpg"
+      "Page d'accueil": "images/projects/sae-but2-2_home.jpg",
+      "Carte interactive": "images/projects/sae-but2-2_map.jpg",
+      "Liste des attractions": "images/projects/sae-but2-2_attractions.jpg"
     }
   },
   {
     "id": 8,
     "title": "Application web",
     "bio": "Développement d'une application web complexe de gestion d'une manifestation.",
-    "image": "src/assets/images/projects/sae-but2-1_home.png",
+    "image": "images/projects/sae-but2-1_home.png",
     "tags": ["BUT2"],
     "body": [
       {"title": "Contexte", "description": "Le projet était de dévopper une application web au sein d'un groupe de développeurs. L'objectif est d'imaginer une manifestation pour laquelle nous devions créer et élaborer un site web complet permettant sa gestion et son organisation. Il doit permettre d'apporter des fonctionnalités à la fois pour les usagers visiteurs mais également pour les administrateurs de l'événement et les prestataires."},
@@ -52,24 +52,24 @@
       "Elaboration de rapports techniques"
     ],
     "images": {
-      "MCD1": "src/assets/images/projects/sae-but2-1_mcd1.png",
-      "MCD2": "src/assets/images/projects/sae-but2-1_mcd2.png",
-      "Préstataires - attractions": "src/assets/images/projects/sae-but2-1_presta.png",
-      "Préstataires - inscription": "src/assets/images/projects/sae-but2-1_presta_inscription.png",
-      "Organisateurs - dashboard": "src/assets/images/projects/sae-but2-1_orga.png",
-      "Visiteurs - page d'accueil": "src/assets/images/projects/sae-but2-1_home.png",
-      "Visiteurs - carte interactive": "src/assets/images/projects/sae-but2-1_carte.png",
-      "Visiteurs - attractions": "src/assets/images/projects/sae-but2-1_attractions.png",
-      "Visiteurs - commentaires": "src/assets/images/projects/sae-but2-1_commentaires.png",
-      "Visiteurs - e-billet": "src/assets/images/projects/sae-but2-1_ebillet.png",
-      "BurnUp Chart": "src/assets/images/projects/sae-but2-1_burnup.png"
+      "MCD1": "images/projects/sae-but2-1_mcd1.png",
+      "MCD2": "images/projects/sae-but2-1_mcd2.png",
+      "Préstataires - attractions": "images/projects/sae-but2-1_presta.png",
+      "Préstataires - inscription": "images/projects/sae-but2-1_presta_inscription.png",
+      "Organisateurs - dashboard": "images/projects/sae-but2-1_orga.png",
+      "Visiteurs - page d'accueil": "images/projects/sae-but2-1_home.png",
+      "Visiteurs - carte interactive": "images/projects/sae-but2-1_carte.png",
+      "Visiteurs - attractions": "images/projects/sae-but2-1_attractions.png",
+      "Visiteurs - commentaires": "images/projects/sae-but2-1_commentaires.png",
+      "Visiteurs - e-billet": "images/projects/sae-but2-1_ebillet.png",
+      "BurnUp Chart": "images/projects/sae-but2-1_burnup.png"
     }
   },
   {
     "id": 7,
     "title": "Gestion de projet informatique",
     "bio": "Gérer et conduire un projet informatique",
-    "image": "src/assets/images/projects/sae-s205_logo.png",
+    "image": "images/projects/sae-s205_logo.png",
     "tags": ["BUT1"],
     "body": [
       {"title": "Contexte", "description": "Cette SAE consiste à partir d’un Contextee, d’analyser les besoins de l’entreprise, de rédiger un cahier des charges ainsi qu’un dossier de gestion de projet pour la SAE-S204."},
@@ -102,16 +102,16 @@
       "Présenter le projet en anglais"
     ],
     "images": {
-      "Articles en vente": "src/assets/images/projects/sae-s204_vueGlobale.png",
-      "Détail article": "src/assets/images/projects/sae-s204_vueDetail.png",
-      "Graphe de visualisation": "src/assets/images/projects/sae-s204_graphe.png"
+      "Articles en vente": "images/projects/sae-s204_vueGlobale.png",
+      "Détail article": "images/projects/sae-s204_vueDetail.png",
+      "Graphe de visualisation": "images/projects/sae-s204_graphe.png"
     }
   },
   {
     "id": 5,
     "title": "Technicien support",
     "bio": "Choix, configuration et installation d'un environnement de travail pour un client.",
-    "image": "src/assets/images/projects/sae-s203_logo.png",
+    "image": "images/projects/sae-s203_logo.png",
     "tags": ["BUT1"],
     "body": [
       {"title": "Contexte", "description": "Cette SAE consiste en partant d’un besoin exprimé d’un client, d'installer et de configurer des services réseau permettant de développer ou de déployer des applications informatiques communicantes."},
@@ -131,7 +131,7 @@
     "id": 4,
     "title": "Site Vitrine",
     "bio": "Création d'un site web statique",
-    "image": "src/assets/images/projects/sae-s106_home.png",
+    "image": "images/projects/sae-s106_home.png",
     "tags": ["BUT1"],
     "body": [
       {"title": "Contexte", "description": "Cette SAE fut réalisé en début de formation afin de nous exercer au language html et css. Le but était de créer le site web d'une entreprise pour la rendre plus visible."},
@@ -165,7 +165,7 @@
       "Présentation soutenance"
     ],
     "images": {
-      "Diagramme de Gant": "src/assets/images/projects/sae-s105_gant.png"
+      "Diagramme de Gant": "images/projects/sae-s105_gant.png"
     },
     "files": {
       "Questionnaire": "src/assets/files/sae-s105_questionnaire.pdf",
@@ -189,7 +189,7 @@
       "Concevoir une base de données relationnelle à partir d’un cahier des charges"
     ],
     "images": {
-      "MCD": "src/assets/images/projects/sae-s104_MCD.png"
+      "MCD": "images/projects/sae-s104_MCD.png"
     },
     "files": {
       "Rapport": "src/assets/files/sae-s104_Analyse.pdf"
@@ -212,8 +212,8 @@
       "Travail dans une équipe informatique"
     ],
     "images": {
-      "Rendu 1 (fin)": "src/assets/images/projects/sae-s101_FinPartie.png",
-      "Rendu 2 (cas erreur)": "src/assets/images/projects/sae-s101_erreur.png"
+      "Rendu 1 (fin)": "images/projects/sae-s101_FinPartie.png",
+      "Rendu 2 (cas erreur)": "images/projects/sae-s101_erreur.png"
     },
     "files": {
       "Code source": "src/assets/files/Jeton.java"
