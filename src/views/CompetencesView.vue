@@ -1,10 +1,10 @@
-<script setup>
+<script>
 
 </script>
 
 <template>
   <div>
-    <h1>Compétences</h1>
+    <h1 class="text-primary">Mes compétences</h1>
   </div>
 </template>
 

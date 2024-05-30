@@ -1,10 +1,10 @@
-<script setup>
+<script>
 
 </script>
 
 <template>
   <div>
-    <h1>A propos de moi</h1>
+    <h1 class="text-primary">A propos de moi</h1>
   </div>
 </template>
 

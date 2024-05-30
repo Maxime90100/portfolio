@@ -29,9 +29,9 @@ export default {
 <template>
   <v-container v-if="project">
 
-    <v-row>
+    <v-row style="align-items: center">
       <router-link to="/projects" class="ml-3"><v-btn icon="mdi-arrow-left"></v-btn></router-link>
-      <h1 class="text-primary ml-4">{{project.title}}</h1>
+      <h2 class="text-primary ml-4">{{project.title}}</h2>
     </v-row>
 
     <v-row v-if="project.body" v-for="section of project.body">
@@ -89,3 +89,7 @@ export default {
 
   </v-container>
 </template>
+
+<style scoped>
+
+</style>

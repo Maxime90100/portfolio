@@ -1,0 +1,222 @@
+[
+  {
+    "id": 9,
+    "title": "Application web mobile",
+    "bio": "Développement d'une application web mobile android.",
+    "image": "src/assets/images/projects/sae-but2-2_home2.png",
+    "tags": ["BUT2"],
+    "body": [
+      {"title": "Contexte", "description": "Ce projet fait suite au projet de création d'une application Web pour l'organisation d'une manifestation. Il consiste au développement d'une application Mobile reprenant certaines fonctionnalités implémentées sur le site web."},
+      {"title": "Choix du sujet", "description": "Ce projet a dû être développé en binôme et nous devions recréer une carte interactive et la possibilité d'avoir accès à l'ensemble des informations des manèges. Nous avons décider de développer une application android avec le langage Kotlin."},
+      {"title": "Difficultés", "description": "La principale difficulté de cette partie du projet est l'utilisation d'un nouveau langage de programmation (Kotlin) mais également une nouvelle manière de développer (développement mobile). Ce projet a donc nécessité une montée en compétences et en connaissances.\n\nLe développement Android est complexe car il met en relation beaucoup d'instances et utilise une structure qui lui est propre et qu'il faut s'approprier. Ce projet m'a donc permis de comprendre le fonctionnement d'une application mobile mais également de développer sous une nouvelle forme."},
+      {"title": "Bilan", "description": "Ce projet m'a permis de découvrir un nouvel aspect du développement et de concevoir une application mobile complémentaire du site web implémenté auparavant. J'ai également pu monter en compétences notamment grâce à la découverte du langage Kotlin et de la programmation sous Android."}
+    ],
+    "competences": [
+      "Conception d'une application mobile",
+      "Développement Android avec Kotlin",
+      "Gestion des contraintes mobiles (ergonomie, ui/ux design)",
+      "Elaboration d'une charte graphique"
+    ],
+    "images": {
+      "Page d'accueil": "src/assets/images/projects/sae-but2-2_home.jpg",
+      "Carte interactive": "src/assets/images/projects/sae-but2-2_map.jpg",
+      "Liste des attractions": "src/assets/images/projects/sae-but2-2_attractions.jpg"
+    }
+  },
+  {
+    "id": 8,
+    "title": "Application web",
+    "bio": "Développement d'une application web complexe de gestion d'une manifestation.",
+    "image": "src/assets/images/projects/sae-but2-1_home.png",
+    "tags": ["BUT2"],
+    "body": [
+      {"title": "Contexte", "description": "Le projet était de dévopper une application web au sein d'un groupe de développeurs. L'objectif est d'imaginer une manifestation pour laquelle nous devions créer et élaborer un site web complet permettant sa gestion et son organisation. Il doit permettre d'apporter des fonctionnalités à la fois pour les usagers visiteurs mais également pour les administrateurs de l'événement et les prestataires."},
+      {"title": "Choix du sujet", "description": "Afin de répondre au mieux aux attentes du projet, nous avons décider de créer une application web permattant l'organisation d'une fête foraine dans le centre ville de Belfort (90). Ainsi les visiteurs pourront directement avoir des informations sur les emplacements prévus. Les prestataires sont les forains qui s'occupent de stands, de manèges ou d'un groupe d'artistes et les organisateurs peuvent contrôler le placement des forains sur le site et le planning de la scène de spectacle."},
+      {"title": "1. Conception du Modèle Conceptuel de Données (MCD)", "description": "1. Conception du Modèle Conceptuel de Données (MCD)\nLa première étape de notre projet était de concevoir un modèle de données permettant de répondre aux différents choix du sujet. Nous avons donc construit un premier MCD en recopiant de manière linéaire les différentes fonctionnalités voulues (MCD1)\n\nAprès avoir analysé notre modèle, nous nous sommes aperçu de plusieurs incohérences notamment dues au fait que nous n'avions pas nous-mêmes défini clairement et précisément le lien entre chaque fonctionnalité et chaque table. Ainsi, nous avons apporté plusieurs modifications pour aboutir à un modèle plus précis et correspondant le mieux à notre projet (MCD2)."},
+      {"title": "2. Développement", "description": "L'application s'inspire du modèle API Rest pour lequel chaque requête du client passe par le serveur API qui lui-même interroge la base de données et renvoie la réponse au client. Les langages utilisés sont:\n\n- Client: VueJS\n- Server: NodeJS\n- BDD: Postgresql\n\nAinsi afin de développer l'ensemble des fonctionnalités de notre application, nous avons décidé de diviser le travail par catégories sachant qu'il y en a 3 différentes: visiteurs, prestataires et organisateurs.\n\nL'avantage de cette répartition des tâches est que chaque personne apporte une vision différente de l'autre et en cas de problème, le développeur bloqué peut demander l'avis d'un autre qui n'a pas travaillé sur les mêmes fonctionnalités, il apporte donc une vision différente avec un autre angle de vue. Cela nous a permis d'avancer tous ensemble, chacun sur des fonctions différentes mais tous dans la même direction."},
+      {"title": "2.1 Prestataires", "description": "Le but pour les prestataires est de pouvoir s'inscrire sur un emplacement pendant un certains temps lors de la fête foraine. Ansi nous avons décidé de créer un compte prestataire dans lequel ce dernier peut référencer ses stands, ses manèges et ses groupes d'artistes. Il peut ensuite effectuer une demande d'inscription qui sera transmise aux organisateurs."},
+      {"title": "2.2 Organisateurs", "description": "Les organisateurs ont la possibilité de gérer l'ensemble des prestataires à travers un tableau de bord et ainsi d'inscrire ou non un forain sur un emplacement pour une date donnée."},
+      {"title": "2.3 Visiteurs", "description": "Les visiteurs doivent avoir accès à une carte interactive afin de visualiser l'ensemble des stands, des manèges et des groupes présents à une date précise et sur quel emplacement. De plus ils peuvent attribuer des notes et des commentaires aux forains."},
+      {"title": "3. Organisation", "description": "La réalisation de ce projet m'a permis d'apprendre à travailler dans une équipe informatique tout en planifiant l'avancement. Pour cela, nous avons utilisé une méthode agile en travaillant par sprint afin d'incrémenter le projet de nouvelles fonctionnalités. J'ai pu produire plusieurs documents afin de suivre la réalisation du site web comme un burnup chart."},
+      {"title": "4. Difficultés", "description": "La réalisation de ce projet m'a permis de me confronter à de nouvelles difficultés notamment celles de développer une carte interactive. En effet, n'ayant aucune connaissance sur ce type de développement, cela a nécessité en amont une phase de documentation et d'analyse de ma part. J'ai ensuite pu procéder par étape en réalisant des maquettes et au fur et à mesure, j'ai ajouté des fonctionnalités pour aboutir à la carte interactive définitive, connectée à la base de données et qui se met à jour automatiquement."},
+      {"title": "5. Bilan", "description": "Ce projet m'a permis de réaliser une application web du début à la fin au sein d'une équipe informatique. J'ai ainsi pu développer mes compétences tant au niveau du développement pur en travaillant sur de nouveaux langages tels que VueJS, NodeJS ou Postgres, mais également au niveau de la méthodologie de conduite de projet agile.\n\nLes difficultés ont pu être surmontées à travers une montée en compétences notamment grâce à de la documentation mais aussi à l'entraide entre les membres de l'équipe."}
+    ],
+    "competences": [
+      "Travail en équipe",
+      "Gestion de projet agile",
+      "Analyse d'un besoin et conception d'une solution applicative",
+      "Développement VueJS, NodeJS et Postgresql",
+      "Création d'un site web complet",
+      "Création d'une carte interactive",
+      "Documentation de code",
+      "Elaboration de rapports techniques"
+    ],
+    "images": {
+      "MCD1": "src/assets/images/projects/sae-but2-1_mcd1.png",
+      "MCD2": "src/assets/images/projects/sae-but2-1_mcd2.png",
+      "Préstataires - attractions": "src/assets/images/projects/sae-but2-1_presta.png",
+      "Préstataires - inscription": "src/assets/images/projects/sae-but2-1_presta_inscription.png",
+      "Organisateurs - dashboard": "src/assets/images/projects/sae-but2-1_orga.png",
+      "Visiteurs - page d'accueil": "src/assets/images/projects/sae-but2-1_home.png",
+      "Visiteurs - carte interactive": "src/assets/images/projects/sae-but2-1_carte.png",
+      "Visiteurs - attractions": "src/assets/images/projects/sae-but2-1_attractions.png",
+      "Visiteurs - commentaires": "src/assets/images/projects/sae-but2-1_commentaires.png",
+      "Visiteurs - e-billet": "src/assets/images/projects/sae-but2-1_ebillet.png",
+      "BurnUp Chart": "src/assets/images/projects/sae-but2-1_burnup.png"
+    }
+  },
+  {
+    "id": 7,
+    "title": "Gestion de projet informatique",
+    "bio": "Gérer et conduire un projet informatique",
+    "image": "src/assets/images/projects/sae-s205_logo.png",
+    "tags": ["BUT1"],
+    "body": [
+      {"title": "Contexte", "description": "Cette SAE consiste à partir d’un Contextee, d’analyser les besoins de l’entreprise, de rédiger un cahier des charges ainsi qu’un dossier de gestion de projet pour la SAE-S204."},
+      {"title": "Travail réalisé", "description": "Ce projet fut réalisé par groupe de 4 :\n\n- rédaction du cahier des charges (MOE et MOA)\n- rédaction du PAQL\n- rédaction d'un buisness plan"},
+      {"title": "Travail personnel", "description": "Personnelement, je me suis occupé de la rédaction du cahier des charges dans son intégralité ainsi que le buisness plan après avoir fait une analyse approfondie du marché du e-commerce."}
+    ],
+    "competences": [
+      "Rédaction de rapports",
+      "Conception cahier des charges",
+      "Analyse économique d'un marché"
+    ],
+    "files": {
+      "Rapports": "src/assets/files/sae-s205_rapports.zip"
+    }
+  },
+  {
+    "id": 6,
+    "title": "Site e-commerce",
+    "bio": "Développement d'un site de vente de téléphones.",
+    "tags": ["BUT1"],
+    "body": [
+      {"title": "Contexte", "description": "Cette SAE consiste au développement d'un site de e-commerce à partir d'un code source du client. Le client souhaite pouvoir rendre son site fonctionnel pour ses clients mais également pour ses employers."},
+      {"title": "Travail réalisé", "description": "La première partie de ce projet fut réalisée par groupe de 4 afin de rendre le site fonctionnel dans une première version. Ainsi nous-avons:\n\n- Analyser le cahier des charges et le code source\n- Créer les bases de données nécessaires\n- Implanter les requêtes SQL\n- Créer un système de connexion des clients et des administrateurs\n- Développer les fonctionnalitées attendues sur un site de e-commerce"},
+      {"title": "Travail personnel", "description": "La deuxième partie individuelle du projet consiste à ajouter des fonctionnalités souhaitées par le client. Personnellement je me suis occupé d'ajouter la possibilité pour un client d'écrire des commentaires et de donner des notes ainsi que des 'likes' aux articles. J'ai également créer une visualisation pour les administrateurs à travers un graphe regroupant le nombre de commentaires par article."}
+    ],
+    "competences": [
+      "Travailler dans une équipe informatique",
+      "Respecter un cahier des charges et un code source imposé",
+      "Développer en SQL, python (Flask) et HTML",
+      "Présenter le projet en anglais"
+    ],
+    "images": {
+      "Articles en vente": "src/assets/images/projects/sae-s204_vueGlobale.png",
+      "Détail article": "src/assets/images/projects/sae-s204_vueDetail.png",
+      "Graphe de visualisation": "src/assets/images/projects/sae-s204_graphe.png"
+    }
+  },
+  {
+    "id": 5,
+    "title": "Technicien support",
+    "bio": "Choix, configuration et installation d'un environnement de travail pour un client.",
+    "image": "src/assets/images/projects/sae-s203_logo.png",
+    "tags": ["BUT1"],
+    "body": [
+      {"title": "Contexte", "description": "Cette SAE consiste en partant d’un besoin exprimé d’un client, d'installer et de configurer des services réseau permettant de développer ou de déployer des applications informatiques communicantes."},
+      {"title": "Travail réalisé", "description": "Ce projet réalisé par groupe de 4 consiste en un :\n\n- Compte rendu de choix des services adaptés\n- Compte rendu de déploiement et de tests\n- Définition des besoins\n- Présentation orale"},
+      {"title": "Travail personnel", "description": "Personnelement je me suis occupé de la rédaction du cahier des charges ainsi que du compte rendu du choix des services afin d'héberger et de faire fonctionner le site de e-commerce de la SAE-S204."}
+    ],
+    "competences": [
+      "rédaction de rapport",
+      "analyse d'un choix d'hébergement",
+      "compréhension du fonctionnement réseau d'un site"
+    ],
+    "files": {
+      "Rapports": "src/assets/files/sae-s203_rapports.zip"
+    }
+  },
+  {
+    "id": 4,
+    "title": "Site Vitrine",
+    "bio": "Création d'un site web statique",
+    "image": "src/assets/images/projects/sae-s106_home.png",
+    "tags": ["BUT1"],
+    "body": [
+      {"title": "Contexte", "description": "Cette SAE fut réalisé en début de formation afin de nous exercer au language html et css. Le but était de créer le site web d'une entreprise pour la rendre plus visible."},
+      {"title": "Travail réalisé", "description": "Ce projet a été réalisé par groupe de 4 et décomposé en plusieurs étapes:\n\n- recherche d'une entreprise et documentation\n- rédaction d'un rapport économique de l'entreprise\n- création du site web"},
+      {"title": "Travail personnel", "description": "Personnellement je me suis occupé de la rédaction du rapport économique du projet et de la partie \"Qui sommes-nous\" et \"Accueil\" du site web. J'ai ainsi pu installer une charte graphique en accord avec mes collègues afin de nous permettre de tous développer dans le même sans. J'ai également pu élargir mes connaissance avec l'utilisation du framework Bootstrap."}
+    ],
+    "competences": [
+      "Travail dans une équipe informatique",
+      "Maitrise du HTML et CSS",
+      "Maitrise rédactionnelle"
+    ],
+    "files": {
+      "Rapport économique": "src/assets/files/sae-s106_rapport_economique.pdf"
+    }
+  },
+  {
+    "id": 3,
+    "title": "Gestion de projet",
+    "bio": "Gérer et conduire un projet.",
+    "tags": ["BUT1"],
+    "body": [
+      {"title": "Contexte", "description": "L'objectif de cette SAE est de formalisé les besoins d'un client et de conduire un projet pour y répondre. Le sujet choisi fut : Organiser un événement pour l’ouverture d’un magasin de jeux vidéo et de plateau."},
+      {"title": "Travail réalisé", "description": "Afin de mener à bien ce projet, plusieurs étapes ont été nécessaire :\n\n- Rédaction d'un questionnaire pour le commanditaire du projet\n- Organisation du groupe de travail et du planning (Gant)\n- Recherche d'informations\n- Conception d'une solution répondant au besoin\n- Soutenance du projet"},
+      {"title": "Travail personnel", "description": "Dans cette SAE, j'ai participé à la rédaction du questionnaire client et aux recherches de solutions. Je me suis occupé de la partie communication et est effectué plusieurs recherches afin d'élaboré plusieurs tableau conçernant la portée du plan de comm, les différentes options possibles et le coût. J'ai également réalisé un diaporama pour la soutenance."}
+    ],
+    "competences": [
+      "Travail dans une équipe",
+      "Gestion de projet (non informatique)",
+      "Recherches personnelles et analyse d'informations",
+      "Utilisation excel (recherche coût du projet)",
+      "Présentation soutenance"
+    ],
+    "images": {
+      "Diagramme de Gant": "src/assets/images/projects/sae-s105_gant.png"
+    },
+    "files": {
+      "Questionnaire": "src/assets/files/sae-s105_questionnaire.pdf",
+      "Planning": "src/assets/files/sae-s105_planning.pdf",
+      "Solutions": "src/assets/files/sae-s105_solutions.pdf",
+      "Soutenance": "src/assets/files/sae-s105_soutenance.pdf"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Interface CRUD",
+    "bio": "Création d'une interface CRUD pour un centre de collecte et de tri des déchets.",
+    "tags": ["BUT1"],
+    "body": [
+      {"title":"Contexte", "description":"L'objectif de cette SAE était de produire un système d'information répondant aux besoins d'un client travaillant dans un centre de collecte et de tri des déchets."},
+      {"title":"Travail réalisé", "description":"Ce projet à necessité plusieurs étapes afin de répondre au besoin du client:\n\n- La création d'un modèle conceptuel de données (MCD) afin de rendre compte de l'entièrté du projet en aval de sa réalisation\n- La création des tables de la base de données établie auparavant dans le language SQL\n- La création d'un site web pythonFlask hébergé sur github utilisant la nouvelle base de données et répondant aux attentes du client"},
+      {"title":"Travail personnel", "description":"J'ai premièrement conçu le modèle conceptuel de données afin de pouvoir le retranscrire en tables dans sql. Je me suis occuper de la partie du site web comprenant la gestion des contenaires et de leurs déchets en incluant des fonctions d'agrégations pour calculer le poid des déchets, ainsi que la création de formulaire pour ajouter de nouvelles entitées. J'ai églement réalisé le rapport."}
+    ],
+    "competences": [
+      "Mettre à jour et interroger une base de données relationnelle",
+      "Concevoir une base de données relationnelle à partir d’un cahier des charges"
+    ],
+    "images": {
+      "MCD": "src/assets/images/projects/sae-s104_MCD.png"
+    },
+    "files": {
+      "Rapport": "src/assets/files/sae-s104_Analyse.pdf"
+    }
+  },
+  {
+    "id": 1,
+    "title": "Jeu du Jeton manquant",
+    "bio": "Création d'un jeu de plateau Java",
+    "tags": ["BUT1"],
+    "body": [
+      {"title":"Contexte", "description":"L’objectif de cette SAE est de programmer un jeu « Jeu du Jeton manquant » dans le langage de programmation Java à partir d’un squelette de code ainsi que des variables imposées. Le travail s’effectue par binôme dans un délai de 4 semaines."},
+      {"title":"Règle du Jeu", "description":"Chaque joueur place leur pion chacun leur tour sur une case du plateau, les pions allant de 1 à 10, le but du jeu est d'avoir le moins de point possible autour de la dernière case manquante."},
+      {"title":"Travail réalisé", "description":"Ce projet à été décomposé en plusieurs étapes afin de  structuré le travail réalisé :\n\n- initialisation du plateau de jeu et du système de placement des jetons \n- création d'un système d'alternance de tour des joueurs\n- création d'une méthode de calcul des points de chaque joueur\n- correction des failles du code lié aux possibles erreurs d'entré de l'utilisateur\n- travail sur l'aspect esthétique du jeu\n- rapport en anglais du projet rendu"},
+      {"title":"Travail personnel", "description":"Mes principales tâches durant cette SAE était de performé mes compétences dans le language java afin d'aboutir au résultat escompté. J'ai réaliser les méthodes de génération du plateau et de calcul des points ainsi que le rapport en anglais du projet. J'ai également normé le code en le rendant sans aucuns bugs et avec une documentation des méthodes."}
+    ],
+    "competences": [
+      "Implémentation d’un besoin client",
+      "Développement d'une interface interactive de jeu",
+      "Travail dans une équipe informatique"
+    ],
+    "images": {
+      "Rendu 1 (fin)": "src/assets/images/projects/sae-s101_FinPartie.png",
+      "Rendu 2 (cas erreur)": "src/assets/images/projects/sae-s101_erreur.png"
+    },
+    "files": {
+      "Code source": "src/assets/files/Jeton.java"
+    }
+  }
+]

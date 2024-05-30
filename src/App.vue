@@ -1,34 +1,28 @@
+<script>
+import AppBar from "@/components/AppBar.vue";
+
+export default {
+  components: {AppBar},
+  data:()=>({
+    routes: [
+      { name: 'Projets', path: '/projects', icon: 'mdi-folder-outline' },
+      { name: 'Experience', path: '/experiences', icon: 'mdi-source-branch' },
+      { name: 'Compétences', path: '/competences', icon: 'mdi-application-brackets-outline' },
+      { name: 'A propos', path: '/about', icon: 'mdi-information-outline' }
+    ]
+  })
+}
+</script>
+
 <template>
   <v-app>
-    <v-app-bar :elevation="2">
-      <template #prepend>
-        <v-app-bar-nav-icon></v-app-bar-nav-icon>
-      </template>
-
-      <v-app-bar-title>Portfolio</v-app-bar-title>
-
-      <template #append>
-        <router-link
-            v-for="route in routes"
-            :key="route.name"
-            :to="route.path"
-            class="mr-4"
-        >{{ route.name }}</router-link>
-      </template>
-    </v-app-bar>
+    <AppBar :routes="routes"></AppBar>
     <v-main>
       <router-view></router-view>
     </v-main>
   </v-app>
 </template>
 
-<script setup>
-import { ref } from 'vue';
-const routes = ref([
-  { name: 'Projets', path: '/projects' },
-  { name: 'Experience', path: '/experiences' },
-  { name: 'Formation', path: '/education' },
-  { name: 'Compétences', path: '/competences' },
-  { name: 'A propos', path: '/about' }
-]);
-</script>
+<style scoped>
+
+</style>

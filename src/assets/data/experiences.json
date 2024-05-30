@@ -1,0 +1,34 @@
+[
+  {
+    "id": 2,
+    "title": "Stage développeur assistant ingénieur",
+    "place": {
+      "name": "Laboratoire Connaissance et Intelligence Artificielle Distribués (CIAD)",
+      "logo": "src/assets/images/experiences/CIAD_logo.png",
+      "website": ""
+    },
+    "startTime": "15/01/2024",
+    "endTime": "04/05/2024",
+    "description": "Dans le cadre de ma 3ème année de BUT (Bachelor universitaire de technologie) à l'IUT de Belfort-Montbéliard, j'ai pu effectuer un stage au sein du Laboratoire de recherche Connaissances et Intelligence Artificielle Distribuées (CIAD), sous la tutelle de l'Université de Technologie Belfort-Montbéliard (UTBM).\n\nMes principales missions étaient de contribuer à la conception et au développement de l'EMS (Energy Management System) du projet Belfort E-START, un projet de création d'une communauté d'énergie renouvelable (C.E.R.) sur le Techn'Hom de Belfort, notamment grâce à l'installation d'ombrières photovoltaïques sur les parkings.\n\nLe projet est constitué de plusieurs unités de développement parmi lesquelles j'ai pu participer au développement du module de supervision afin de gouverner et visualiser les membres, les organisations et les données de consommation et de production de la C.E.R.\n\nLors de ce stage j'ai pu monter en compétence et apprendre de nouvelles technologies, notamment Java Spring Boot (API), InfluxDB (Base de données temporelle), Grafana (dashboards) et WordPress (site web: https://belfortestart.com/).",
+    "files": {
+      "Rapport de stage": "",
+      "Rapport technique": ""
+    }
+  },
+  {
+    "id": 1,
+    "title": "Stage développeur web",
+    "place": {
+      "name": "Département du Territoire de Belfort",
+      "logo": "src/assets/images/experiences/CD90_logo.png",
+      "website": ""
+    },
+    "startTime": "03/04/2023",
+    "endTime": "24/06/2023",
+    "description": "Dans le cadre de ma 2ème année de BUT (Bachelor universitaire de technologie) à l'IUT de Belfort-Montbéliard, j'ai pu effectuer un stage au sein de la Direction des systèmes d'information du Territoire de Belfort dont l'objectif était la création d'une application web permettant au service des archives départementales de référencer leurs documents.\n\nCe stage m'a permis de mettre en pratique mes connaissances et mes compétences dans le domaine du développement web notamment par la création d'une solution applicative répondant au besoin de création d'un outil métier permettant la gestion de référencement des documents des agents du service des archives mais également dans la conduite et la gestion de projet agile comprenant l'analyse d'un besoin métier et la conception d'un nouveau process.\n\nLe projet a nécessité le développement de 3 instances principales reprenant le fonctionnement de l'architecture API REST:\n - la partie client web (VueJS)\n - la partie serveur API (NodeJS)\n - la partie base de données (MySQL)\n\nCe stage m'a donc donné la possibilité de monter en compétence sur la gestion de données en masse (Big Data) avec la reprise de données Excel et l'intégration en base de données, et la visualisation des données (tableau de bord, statistiques). J'ai pu évoluer dans un environnement professionnalisant et produire un réel outil métier qui servira de base afin d'être amélioré dans le futur avec l'ajout de nouvelles fonctionnalités.",
+    "files": {
+      "Rapport de stage": "",
+      "Rapport technique": ""
+    }
+  }
+]

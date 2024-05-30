@@ -1,5 +1,40 @@
+<script>
+import ProjectCards from "@/components/projects/ProjectCards.vue";
+import ProjectDetails from "@/components/projects/ProjectDetails.vue";
+import {getAllProjects} from "@/services/projects.service.js";
+
+export default {
+  name: 'ProjectsView',
+  components: {ProjectDetails, ProjectCards},
+  data() {
+    return {
+      projects: []
+    };
+  },
+  mounted() {
+    this.loadProjects();
+  },
+  computed:{
+    selectedProject() {
+      const projectId = parseInt(this.$route.params.id);
+      return projectId
+          ? this.projects.find(p => p.id === projectId)
+          : null
+    }
+  },
+  methods: {
+    async loadProjects() {
+      getAllProjects()
+          .then(projects => this.projects = projects)
+          .catch(error => console.error(error))
+    }
+  }
+};
+</script>
+
 <template>
   <div>
+    <h1 class="text-primary">Mes projets</h1>
     <ProjectCards
         v-if="!$route.params.id"
         :projects="projects"
@@ -21,43 +56,6 @@
   </div>
 </template>
 
-<script>
-import ProjectCards from "@/components/projects/ProjectCards.vue";
-import ProjectDetails from "@/components/projects/ProjectDetails.vue";
-import {getAllProjects, getProjectsTags} from "@/services/projects.service.js";
+<style scoped>
 
-export default {
-  name: 'ProjectsView',
-  components: {ProjectDetails, ProjectCards},
-  data() {
-    return {
-      projects: [],
-      tags: []
-    };
-  },
-  mounted() {
-    this.loadProjects();
-    this.loadTags()
-  },
-  computed:{
-    selectedProject() {
-      const projectId = parseInt(this.$route.params.id);
-      return projectId
-          ? this.projects.find(p => p.id === projectId)
-          : null
-    }
-  },
-  methods: {
-    async loadProjects() {
-      getAllProjects()
-          .then(projects => this.projects = projects)
-          .catch(error => console.error(error))
-    },
-    async loadTags(){
-      getProjectsTags()
-          .then(tags => this.tags = tags)
-          .catch(error => console.error(error))
-    }
-  }
-};
-</script>
+</style>
