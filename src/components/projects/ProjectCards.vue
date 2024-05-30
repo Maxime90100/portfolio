@@ -79,7 +79,7 @@ export default{
                         ? project.image
                         : project.images
                           ? project.images[Object.keys(project.images)[0]]
-                          : 'src/assets/images/no-photo-available.png'"
+                          : 'images/no-photo-available.png'"
                     cover
                     style="border-radius: 30px"
                 ></v-img>
