@@ -1,4 +1,4 @@
-const path = import.meta.env.BASE_URL + 'src/assets/data/'
+const path = import.meta.env.BASE_URL + 'data/'
 
 export async function getAllProjects() {
     try {

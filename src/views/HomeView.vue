@@ -8,7 +8,7 @@ export default {
   },
   computed: {
     videoPath() {
-      return import.meta.env.BASE_URL + 'public/videos/homepage_background.mp4';
+      return import.meta.env.BASE_URL + 'videos/homepage_background.mp4';
     }
   }
 };
