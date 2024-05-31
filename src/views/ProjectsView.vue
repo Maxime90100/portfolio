@@ -27,6 +27,14 @@ export default {
       getAllProjects()
           .then(projects => this.projects = projects)
           .catch(error => console.error(error))
+    },
+    scrollToTop() {
+      window.scrollTo({ top: 0 });
+    }
+  },
+  watch: {
+    $route(to, from) {
+      this.scrollToTop();
     }
   }
 };

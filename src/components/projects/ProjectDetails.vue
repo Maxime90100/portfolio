@@ -10,17 +10,18 @@ export default {
   data() {
     return {
       dialog: false,
-      selectedImage: ''
+      selectedImage: {}
     }
   },
   methods: {
-    openDialog(index) {
-      this.selectedImage = this.baseUrl + this.project.images[index];
+    openDialog(img) {
+      this.selectedImage.name = img[0];
+      this.selectedImage.path = this.baseUrl + this.project.images[img[0]];
       this.dialog = true;
     },
     closeDialog() {
       this.dialog = false;
-      this.selectedImage = '';
+      this.selectedImage = {};
     }
   }
 }
@@ -47,8 +48,8 @@ export default {
       <v-col>
         <v-card color="primary">
           <v-card-title class="text-h5">Compétences</v-card-title>
-          <v-card-text style="white-space: pre-line;">
-            <v-chip-group>
+          <v-card-text>
+            <v-chip-group column>
               <v-chip v-for="competence of project.competences">{{competence}}</v-chip>
             </v-chip-group>
           </v-card-text>
@@ -58,19 +59,19 @@ export default {
 
     <v-row v-if="project.images">
       <v-col cols="4" v-for="(img, key) of Object.entries(project.images)" :key="key">
-        <v-card @click="openDialog(img[0])">
+        <v-card @click="openDialog(img)">
           <v-card-title>{{ img[0] }}</v-card-title>
           <v-img class="align-end text-white" :src="baseUrl + img[1]" cover></v-img>
         </v-card>
       </v-col>
-      <v-dialog v-model="dialog" max-width="75%">
+      <v-dialog v-model="dialog" max-width="90%" persistent>
         <v-card class="pa-4">
-          <v-img :src="selectedImage">
-            <v-card-actions>
-              <v-spacer></v-spacer>
-              <v-btn color="error" icon="mdi-close" variant="elevated" @click="closeDialog"></v-btn>
-            </v-card-actions>
-          </v-img>
+          <v-card-actions>
+            <v-card-title>{{selectedImage.name}}</v-card-title>
+            <v-spacer></v-spacer>
+            <v-btn color="error" icon="mdi-close" variant="elevated" @click="closeDialog" density="compact"></v-btn>
+          </v-card-actions>
+          <v-img :src="selectedImage.path"></v-img>
         </v-card>
       </v-dialog>
     </v-row>

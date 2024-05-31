@@ -24,7 +24,7 @@ export default {
     <VideoHeader :video="videoPath">
       <template v-slot:default>
         <h1>Bienvenue sur mon Portfolio</h1>
-        <p>Je suis Maxime Théveneau, Développeur Full-Stack</p>
+        <p>Je suis <span id="myname">Maxime Théveneau</span>, Développeur Full-Stack</p>
         <p>Passionné par l'innovation et le développement informatique.</p>
         <br>
         <v-btn
@@ -38,5 +38,8 @@ export default {
 </template>
 
 <style scoped>
-
+#myname{
+  color: #90cbc7;
+  font-weight: bold;
+}
 </style>

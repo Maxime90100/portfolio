@@ -89,9 +89,9 @@ export default{
                           : 'images/no-photo-available.png'"
                     cover
                 ></v-img>
-                <div style="height: 150px">
-                  <v-card-title class="pa-1">{{project.title}}</v-card-title>
-                  <v-card-text>
+                <div style="height: 180px">
+                  <v-card-title class="pa-1" style="white-space: normal">{{project.title}}</v-card-title>
+                  <v-card-text class="pa-0">
                     <v-chip-group v-if="project.tags">
                       <v-chip
                           v-for="tag of project.tags"
@@ -114,7 +114,9 @@ export default{
         title="Aucun projet ne correspond à votre recherche."
         text="Essayez d'ajuster vos termes de recherche."
         class="mt-10"
-    ></v-empty-state>
+    >
+      <v-btn text="supprimer les filtres" variant="plain" @click="filter = false"></v-btn>
+    </v-empty-state>
   </div>
 </template>
 
