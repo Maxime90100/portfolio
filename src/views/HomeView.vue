@@ -10,6 +10,11 @@ export default {
     videoPath() {
       return import.meta.env.BASE_URL + 'videos/homepage_background.mp4';
     }
+  },
+  methods: {
+    goTo(path){
+      this.$router.push(path);
+    }
   }
 };
 </script>
@@ -20,8 +25,13 @@ export default {
       <template v-slot:default>
         <h1>Bienvenue sur mon Portfolio</h1>
         <p>Je suis Maxime Théveneau, Développeur Full-Stack</p>
-        <p>Passionné par la création d'applications web et mobiles innovantes.</p>
-        <v-btn>me découvrir</v-btn>
+        <p>Passionné par l'innovation et le développement informatique.</p>
+        <br>
+        <v-btn
+            @click="goTo('/about')"
+            text="me découvrir"
+            append-icon="mdi-arrow-right"
+        ></v-btn>
       </template>
     </VideoHeader>
   </div>
