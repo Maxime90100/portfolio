@@ -74,7 +74,9 @@ export default {
   height: 90vh;
   display: flex;
 }
-
+p{
+  color: #c1c1c1;
+}
 .avatar {
   display: flex;
   flex-direction: column;

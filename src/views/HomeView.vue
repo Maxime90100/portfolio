@@ -38,8 +38,11 @@ export default {
 </template>
 
 <style scoped>
+p{
+  color: #c1c1c1;
+}
 #myname{
-  color: #90cbc7;
+  color: white;
   font-weight: bold;
 }
 </style>
