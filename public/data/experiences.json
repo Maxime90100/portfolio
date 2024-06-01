@@ -5,7 +5,7 @@
     "place": {
       "name": "EPITECH, Strasbourg",
       "logo": "images/experiences/EPITECH_logo.png",
-      "website": ""
+      "website": "https://www.epitech.eu/ecole-informatique-strasbourg/"
     },
     "startTime": "2024",
     "endTime": "2026",
@@ -17,7 +17,7 @@
     "place": {
       "name": "Laboratoire Connaissance et Intelligence Artificielle Distribués (CIAD), UTBM",
       "logo": "images/experiences/CIAD_logo.png",
-      "website": ""
+      "website": "https://www.ciad-lab.fr/"
     },
     "startTime": "15 Janvier 2024",
     "endTime": "04 Mai 2024",
@@ -33,7 +33,7 @@
     "place": {
       "name": "Département du Territoire de Belfort",
       "logo": "images/experiences/CD90_logo.png",
-      "website": ""
+      "website": "https://www.territoiredebelfort.fr/"
     },
     "startTime": "03 Avril 2023",
     "endTime": "24 Juin 2023",
@@ -49,7 +49,7 @@
     "place": {
       "name": "IUT de Belfort, Département Informatique",
       "logo": "images/experiences/IUTBM_logo.png",
-      "website": ""
+      "website": "https://www.iut-nfc.univ-fcomte.fr/b-u-t-informatique/"
     },
     "startTime": "2021",
     "endTime": "2024",
@@ -61,7 +61,7 @@
     "place": {
       "name": "Lycée Condoret, Belfort",
       "logo": "images/experiences/lycee_condorcet_belfort_logo.jpg",
-      "website": ""
+      "website": "https://lyc-condorcet-belfort.eclat-bfc.fr/"
     },
     "startTime": "2018",
     "endTime": "2021",
