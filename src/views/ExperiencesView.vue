@@ -27,6 +27,14 @@ export default {
       getAllExperiences()
           .then(experiences => this.experiences = experiences)
           .catch(error => console.error(error))
+    },
+    scrollToTop() {
+      window.scrollTo({ top: 0 });
+    }
+  },
+  watch: {
+    $route(to, from) {
+      this.scrollToTop();
     }
   }
 };
