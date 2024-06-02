@@ -3,7 +3,7 @@
     "id": 10,
     "title": "Station météorologique connectée",
     "bio": "Développement d'une application de station météorologique connectée à des capteurs.",
-    "image": "",
+    "badge": "New",
     "tags": ["BUT3"],
     "body": [
       {"title": "Contexte", "description": ""},
@@ -12,7 +12,12 @@
       {"title": "Bilan", "description": ""}
     ],
     "competences": [],
-    "images": {}
+    "images": {
+      "Accueil": "images/projects/BUT/BUT3/sae-but3_home.png",
+      "Connexion": "images/projects/BUT/BUT3/sae-but3_login.png",
+      "Modules": "images/projects/BUT/BUT3/sae-but3_modules.png",
+      "Graphe": "images/projects/BUT/BUT3/sae-but3_graphe.png"
+    }
   },
   {
     "id": 9,

@@ -1,7 +1,12 @@
 <script>
 export default {
   name: "ExperienceDetails",
-  props: ['experience']
+  props: ['experience'],
+  computed: {
+    baseUrl() {
+      return import.meta.env.BASE_URL
+    },
+  }
 }
 </script>
 
@@ -23,6 +28,13 @@ export default {
           text="site web"
       ></v-btn>
       <v-card-text>{{experience.description}}</v-card-text>
+      <v-list v-if="experience.files">
+        <v-list-item v-for="(file, key) of Object.entries(experience.files)" :key="key">
+          <a :href="baseUrl + file[1]" :download="file[0]">
+            <v-btn prepend-icon="mdi-download" :text="file[0]" variant="plain"></v-btn>
+          </a>
+        </v-list-item>
+      </v-list>
     </v-card>
   </div>
 </template>

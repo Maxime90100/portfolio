@@ -61,7 +61,16 @@ export default {
       <v-col cols="4" v-for="(img, key) of Object.entries(project.images)" :key="key">
         <v-card @click="openDialog(img)">
           <v-card-title>{{ img[0] }}</v-card-title>
-          <v-img class="align-end text-white" :src="baseUrl + img[1]" cover></v-img>
+          <v-img class="align-end text-white" :src="baseUrl + img[1]" cover>
+            <template v-slot:placeholder>
+              <div class="d-flex align-center justify-center fill-height">
+                <v-progress-circular
+                    color="grey-lighten-4"
+                    indeterminate
+                ></v-progress-circular>
+              </div>
+            </template>
+          </v-img>
         </v-card>
       </v-col>
       <v-dialog v-model="dialog" max-width="90%" persistent>
@@ -71,7 +80,16 @@ export default {
             <v-spacer></v-spacer>
             <v-btn color="error" icon="mdi-close" variant="elevated" @click="closeDialog" density="compact"></v-btn>
           </v-card-actions>
-          <v-img :src="selectedImage.path"></v-img>
+          <v-img :src="selectedImage.path">
+            <template v-slot:placeholder>
+              <div class="d-flex align-center justify-center fill-height">
+                <v-progress-circular
+                    color="grey-lighten-4"
+                    indeterminate
+                ></v-progress-circular>
+              </div>
+            </template>
+          </v-img>
         </v-card>
       </v-dialog>
     </v-row>

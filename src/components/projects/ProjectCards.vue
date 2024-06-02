@@ -72,37 +72,54 @@ export default{
           <v-hover>
             <template v-slot:default="{ isHovering, props }">
               <v-card
-                  v-bind="props"
-                  :color="isHovering ? 'secondary' : undefined"
-                  class="pa-4"
-                  style="border-radius: 30px"
-              >
-                <v-img
-                    class="align-end text-white"
+                    v-bind="props"
+                    :color="isHovering ? 'secondary' : undefined"
+                    class="pa-4"
                     style="border-radius: 30px"
-                    height="200"
-                    :src="
+                >
+                  <v-img
+                      class="align-end text-white"
+                      style="border-radius: 30px"
+                      height="200"
+                      :src="
                       project.image
                         ? project.image
                         : project.images
                           ? project.images[Object.keys(project.images)[0]]
                           : 'images/no-photo-available.png'"
-                    cover
-                ></v-img>
-                <div style="height: 180px">
-                  <v-card-title class="pa-1" style="white-space: normal">{{project.title}}</v-card-title>
-                  <v-card-text class="pa-0">
-                    <v-chip-group v-if="project.tags">
-                      <v-chip
-                          v-for="tag of project.tags"
-                          density="compact"
-                          :text="tag"
-                      ></v-chip>
-                    </v-chip-group>
-                    {{project.bio}}
-                  </v-card-text>
-                </div>
-              </v-card>
+                      cover
+                  >
+                    <template v-slot:placeholder>
+                      <div class="d-flex align-center justify-center fill-height">
+                        <v-progress-circular
+                            color="grey-lighten-4"
+                            indeterminate
+                        ></v-progress-circular>
+                      </div>
+                    </template>
+                  </v-img>
+                  <div style="height: 180px">
+                    <v-card-title class="pa-1" style="white-space: normal">
+                      {{project.title}}
+                      <v-badge
+                          v-if="project.badge"
+                          :content="project.badge"
+                          color="primary"
+                          class="ml-3 mb-2"
+                      ></v-badge>
+                    </v-card-title>
+                    <v-card-text class="pa-0">
+                      <v-chip-group v-if="project.tags">
+                        <v-chip
+                            v-for="tag of project.tags"
+                            density="compact"
+                            :text="tag"
+                        ></v-chip>
+                      </v-chip-group>
+                      {{project.bio}}
+                    </v-card-text>
+                  </div>
+                </v-card>
             </template>
           </v-hover>
         </router-link>

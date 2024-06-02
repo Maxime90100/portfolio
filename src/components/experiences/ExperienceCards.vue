@@ -49,7 +49,7 @@ export default {
       <template v-slot:opposite v-if="!isMobile">
         <div class="pt-1 headline font-weight-bold">{{ experience.startTime }} - {{ experience.endTime }}</div>
       </template>
-      <v-card :class="{ 'mobile-card': isMobile }">
+      <v-card :class="{ 'mobile-card': isMobile }" style="border-radius: 30px">
         <v-card-title class="text-h5">{{ experience.title }}</v-card-title>
         <v-card-subtitle v-if="isMobile" class="mb-4">{{ experience.startTime }} - {{ experience.endTime }}</v-card-subtitle>
         <v-card-subtitle>{{ experience.place.name }}</v-card-subtitle>
