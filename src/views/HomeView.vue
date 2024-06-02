@@ -21,7 +21,7 @@ export default {
 
 <template>
   <div>
-    <VideoHeader :video="videoPath">
+    <VideoHeader class="header" :video="videoPath">
       <template v-slot:default>
         <h1>Bienvenue sur mon Portfolio</h1>
         <p>Je suis <span id="myname">Maxime Théveneau</span>, Développeur Full-Stack</p>
@@ -38,6 +38,9 @@ export default {
 </template>
 
 <style scoped>
+.header{
+  cursor: url("/images/cursor.cur"), auto;
+}
 p{
   color: #c1c1c1;
 }
